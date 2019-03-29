@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,p,input,button{margin: 0; padding: 0;}
+			p input{width: 250px; height: 40px;line-height: 40px; font-size: 20px;margin: 30px 0 20px 400px; }
+			button{cursor: pointer; width: 70px;line-height: 40px; height: 40px; font-size: 15px;text-align: center; margin-left: 450px;border: none;}
+			
+		</style>
+	</head>
+	<body>
+		<p><input type="text" value="北京市" /></p>
+		<p><input type="text" value="昌平区" /></p>
+		<p><button>传参</button></p>
+	</body>
+</html>
+<script type="text/javascript">
+	
+	var CanShu = function(a,b){
+		alert(a.value);
+		alert(b.value);
+	}
+	var oInp = document.getElementsByTagName("input");
+	var oBtn = document.getElementsByTagName("button")[0];
+	
+	oBtn.onclick = function (){
+		CanShu(oInp[0],oInp[1])
+	}
+	
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,input,p,label{margin: 0;padding: 0;}
+			label{margin-left: 300px;font-size: 9px; vertical-align:middle;}
+			p{display: none; width: 130px;height: 30px;border: 1px solid orange;background: #FFD700; font-size: 9px; margin-left: 280px;}
+		</style>
+		
+	</head>
+	<body>
+		<label><input type="checkbox"/>两周内自动登陆</label>
+		<p id="My_p">为了您的信息安全，请不要在网吧或公用电脑上使用该功能！！</p>
+	</body>
+</html>
+<script type="text/javascript">
+	
+	var oP = document.getElementById("My_p");
+	var oLabel = document.getElementsByTagName("label")[0];
+	
+	oLabel.onmouseover = function(){
+		oP.style.display = "block";
+	}
+	oLabel.onmouseout = function (){
+		oP.style.display = "none";
+	}
+	
+</script>
